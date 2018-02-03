@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import clouds from '../assets/img/clouds.png';
 import bgImage from '../assets/img/antoine-barres.jpg';
 
+import PostsIndex from '../components/posts_index';
+
 
 class Home extends Component {
   render() {
@@ -26,6 +28,9 @@ class Home extends Component {
             </div>
           </div>
           <div className="moving-clouds" style={{backgroundImage: "url("+clouds+")"}}></div>
+        </div>
+        <div className="">
+          <PostsIndex />
         </div>
       </div>
     )
