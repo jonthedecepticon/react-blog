@@ -8,6 +8,7 @@ import './assets/css/bootstrap.min.css';
 import './assets/css/paper-kit.css?v=2.1.0';
 import './assets/css/demo.css';
 import './assets/css/nucleo-icons.css';
+import './assets/css/font-awesome.min.css';
 
 import App from './components/App';
 import Home from './components/Home';
