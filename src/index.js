@@ -15,7 +15,8 @@ import App from './components/App';
 import Home from './components/Home';
 import Header from './components/Header';
 import reducers from './reducers';
-import PostsNew from './components/posts_new';
+import PostsNew from "./components/posts_new";
+import PostsShow from "./components/posts_show";
 
 import registerServiceWorker from './registerServiceWorker';
 
@@ -28,6 +29,7 @@ ReactDOM.render(
         <Header />
         <Switch>
           <Route path="/posts/new" component={PostsNew} />
+          <Route path="/posts/:id" component={PostsShow} />
           <Route path="/" component={Home} />
         </Switch>
       </div>
