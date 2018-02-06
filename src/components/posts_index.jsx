@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import _ from 'lodash';
 
@@ -37,6 +38,11 @@ class PostsIndex extends Component {
           <div className="col-lg-8 col-md-10 mx-auto">
             {this.renderPosts()}
           </div>
+        </div>
+        <div class="clearfix">
+          <Link className="btn btn-primary float-right" to={'/posts/new'}>
+            Create Post &rarr;
+          </Link>
         </div>
       </div>
     )

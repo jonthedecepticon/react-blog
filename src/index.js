@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import promise from 'redux-promise';
 
 import './assets/css/bootstrap.min.css';
@@ -15,6 +15,7 @@ import App from './components/App';
 import Home from './components/Home';
 import Header from './components/Header';
 import reducers from './reducers';
+import PostsNew from './components/posts_new';
 
 import registerServiceWorker from './registerServiceWorker';
 
@@ -25,7 +26,10 @@ ReactDOM.render(
     <BrowserRouter>
       <div>
         <Header />
-        <Route path="/" component={Home} />
+        <Switch>
+          <Route path="/posts/new" component={PostsNew} />
+          <Route path="/" component={Home} />
+        </Switch>
       </div>
     </BrowserRouter>
   </Provider>
