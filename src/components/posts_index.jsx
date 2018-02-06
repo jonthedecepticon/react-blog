@@ -18,8 +18,8 @@ class PostsIndex extends Component {
               <h2 className="post-title">
                 {post.title}
               </h2>
-              <h3 className="post-subtitle">
-                {post.title}
+              <h3 className="post-subtitle truncate">
+                {post.content}
               </h3>
             </Link>
             <p className="post-meta">Posted by

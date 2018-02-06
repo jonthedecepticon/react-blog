@@ -1,7 +1,12 @@
 .tim-row{
     margin-bottom: 20px;
 }
-
+.truncate {
+  width: 500px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .tim-white-buttons {
     background-color: #777777;
 }
