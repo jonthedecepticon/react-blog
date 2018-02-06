@@ -5,8 +5,6 @@ import { connect } from "react-redux";
 import { createPost } from "../actions";
 import '../assets/css/post-new.css';
 
-import $ from "jquery";
-
 class PostsNew extends Component {
   renderField(field) {
     const { meta: { touched, error } } = field;
