@@ -1,0 +1,21 @@
+.post-heading {
+  padding-top: 150px;
+}
+.post-heading h1 {
+  font-weight: bolder;
+  color: white;
+}
+.post-heading span.meta {
+  font-weight: bolder;
+  color: white;
+}
+.post-heading a{
+  color: black;
+}
+.content-stuff {
+  color: black;
+  padding: 100px 0;
+}
+article {
+  margin-bottom: 100px;
+}

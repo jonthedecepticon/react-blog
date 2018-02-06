@@ -12,27 +12,39 @@ class PostsIndex extends Component {
   renderPosts() {
     return _.map(this.props.posts, post => {
       return (
-        <li className="list-group-item" key={post.id}>
-          <Link to={`/posts/${post.id}`}>
-            {post.title}
-          </Link>
-        </li>
+        <div className="" key={post.id}>
+          <div className="">
+            <Link to={`/posts/${post.id}`}>
+              <h2 className="post-title">
+                {post.title}
+              </h2>
+              <h3 className="post-subtitle">
+                {post.title}
+              </h3>
+            </Link>
+            <p className="post-meta">Posted by
+              <a href="" style={{pointerEvents: "none"}}>&nbsp;Anonymous&nbsp;</a>
+              under <a href="" style={{pointerEvents: "none"}}>{post.categories}</a> category.</p>
+          </div>
+          <hr/>
+        </div>
       );
     });
   }
 
   render() {
     return (
-      <div>
-        <div className="text-xs-right">
-          <Link className="btn btn-primary" to="/posts/new">
-            Add a Post
+      <div className="container">
+        <div className="row">
+          <div className="post-preview" style={{width: "100%"}}>
+            {this.renderPosts()}
+          </div>
+        </div>
+        <div className="clearfix">
+          <Link className="btn btn-primary float-right" to={'/posts/new'}>
+            Create Post &rarr;
           </Link>
         </div>
-        <h3>Posts</h3>
-        <ul className="list-group">
-          {this.renderPosts()}
-        </ul>
       </div>
     );
   }

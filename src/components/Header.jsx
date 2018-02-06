@@ -12,7 +12,9 @@ class Header extends Component {
               <span className="navbar-toggler-bar"></span>
               <span className="navbar-toggler-bar"></span>
             </button>
-            <a className="navbar-brand" href="">React Blog</a>
+            <Link className="navbar-brand" to={'/'}>
+              React Blog
+            </Link>
           </div>
           <div className="collapse navbar-collapse" id="navbarToggler">
             <ul className="navbar-nav ml-auto">
